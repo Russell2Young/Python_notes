@@ -1,6 +1,8 @@
 #把一个字典扁平化
 #源字典：{'a':{'b':1,'c':2},'d':{'e':3,'f':{'g':4}}}
 #目标字典：{'a.b': 1, 'a.c': 2, 'd.e': 3, 'd.f.g': 4}
+
+#1st
 source = {'a':{'b':1,'c':2},'d':{'e':3,'f':{'g':4}}}
 target = {}
 def flatmap(src,prefix=''):
@@ -12,7 +14,7 @@ def flatmap(src,prefix=''):
 flatmap(source)
 print(target)
 
-#内部创建dest字典
+#2nd 内部创建dest字典
 source = {'a':{'b':1,'c':2},'d':{'e':3,'f':{'g':4}}}
 
 def flatmap(src,dest=None,prefix=''):
