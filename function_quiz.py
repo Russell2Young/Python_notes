@@ -30,6 +30,7 @@ print(flatmap(source))
 
 #3rd
 source = {'a':{'b':1,'c':2},'d':{'e':3,'f':{'g':4}}}
+# 4th
 
 def flatmap(src):
     def _flatmap(src,dest=None,prefix=''):
